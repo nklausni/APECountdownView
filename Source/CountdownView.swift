@@ -53,6 +53,12 @@ A view with a countdown.
     
     @IBOutlet var countdownTitleLabels: [UILabel]!
     
+    @IBOutlet weak var countdownLabelDays: UILabel!
+    @IBOutlet weak var countdownLabelHours: UILabel!
+    @IBOutlet weak var countdownLabelMinutes: UILabel!
+    @IBOutlet weak var countdownLabelSeconds: UILabel!
+
+
     /**
      Size of each block.
     */
@@ -271,11 +277,13 @@ A view with a countdown.
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
+        labelSetup()
     }
 
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         xibSetup()
+        labelSetup()
     }
     
     /**
@@ -322,6 +330,13 @@ A view with a countdown.
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         
         return view
+    }
+
+    func labelSetup() {
+        countdownLabelDays.text = "Days".localized().uppercased()
+        countdownLabelHours.text = "Hours".localized().uppercased()
+        countdownLabelMinutes.text = "Minutes".localized().uppercased()
+        countdownLabelSeconds.text = "Seconds".localized().uppercased()
     }
     
     /**

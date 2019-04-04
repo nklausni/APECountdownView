@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  APECountdownView
+
+  Created by Niko Klausnitzer on 04.04.19.
+  Copyright © 2019 Apegroup. All rights reserved.
+*/
+
+"Days" = "days";
+"Hours" = "hours";
+"Minutes" = "min";
+"Seconds" = "sec";

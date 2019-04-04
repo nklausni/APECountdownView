@@ -44,4 +44,8 @@ extension String {
         }
         return String(self[self.index(before: self.endIndex)..<self.endIndex])
     }
+
+    func localized(bundle: Bundle = .main, tableName: String = "Localizable") -> String {
+        return NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
+    }
 }

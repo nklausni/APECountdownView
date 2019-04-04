@@ -1,12 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountdownView" customModule="APECountdownView" customModuleProvider="target">
             <connections>
+                <outlet property="countdownLabelDays" destination="D7R-IH-Uj5" id="aLS-ir-ehR"/>
+                <outlet property="countdownLabelHours" destination="uEm-mb-zGG" id="ijF-GP-c0z"/>
+                <outlet property="countdownLabelMinutes" destination="8rj-65-koG" id="U97-Rp-W5Q"/>
+                <outlet property="countdownLabelSeconds" destination="COz-X4-fMH" id="kxA-tS-Ir6"/>
                 <outlet property="countdownNumberViewDay1" destination="hp3-rf-m2G" id="ebL-7a-Nvw"/>
                 <outlet property="countdownNumberViewDay2" destination="Ncs-M5-a2m" id="pRB-WJ-bfA"/>
                 <outlet property="countdownNumberViewHour1" destination="7pP-uH-Ouf" id="wo7-R2-0oT"/>
@@ -60,7 +67,7 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hp3-rf-m2G" customClass="CountdownNumberView" customModule="APECountdownView" customModuleProvider="target">
                     <rect key="frame" x="181" y="280" width="30" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="7I3-WW-za2"/>
                         <constraint firstAttribute="width" constant="30" id="KK2-wF-BoX"/>
@@ -68,7 +75,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncs-M5-a2m" customClass="CountdownNumberView" customModule="APECountdownView" customModuleProvider="target">
                     <rect key="frame" x="208" y="280" width="30" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="bhF-en-wDL"/>
                         <constraint firstAttribute="width" constant="30" id="eey-fm-7Z0"/>
@@ -76,7 +83,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pP-uH-Ouf" customClass="CountdownNumberView" customModule="APECountdownView" customModuleProvider="target">
                     <rect key="frame" x="241" y="280" width="30" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="K1W-dt-xTa"/>
                         <constraint firstAttribute="width" constant="30" id="oKn-OO-oWv"/>
@@ -84,7 +91,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVI-kS-Pig" customClass="CountdownNumberView" customModule="APECountdownView" customModuleProvider="target">
                     <rect key="frame" x="268" y="280" width="30" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="EFZ-QA-ieN"/>
                         <constraint firstAttribute="width" constant="30" id="xMh-aX-r4g"/>
@@ -92,7 +99,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmx-bJ-nIZ" customClass="CountdownNumberView" customModule="APECountdownView" customModuleProvider="target">
                     <rect key="frame" x="302" y="280" width="30" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="TCC-dv-zmG"/>
                         <constraint firstAttribute="width" constant="30" id="gGu-Uy-1MO"/>
@@ -100,7 +107,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRN-1Y-oW1" customClass="CountdownNumberView" customModule="APECountdownView" customModuleProvider="target">
                     <rect key="frame" x="329" y="280" width="30" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="qpS-XX-Vy9"/>
                         <constraint firstAttribute="width" constant="30" id="xbC-JW-c49"/>
@@ -108,7 +115,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozc-ln-Ji0" customClass="CountdownNumberView" customModule="APECountdownView" customModuleProvider="target">
                     <rect key="frame" x="362" y="280" width="30" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="1Xm-Fs-DBf"/>
                         <constraint firstAttribute="width" constant="30" id="c2Y-6E-4E2"/>
@@ -116,15 +123,15 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCw-ft-SbB" customClass="CountdownNumberView" customModule="APECountdownView" customModuleProvider="target">
                     <rect key="frame" x="389" y="280" width="30" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="KeM-ie-7fd"/>
                         <constraint firstAttribute="width" constant="30" id="OMa-I9-0Fc"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKu-Pa-Fog" userLabel="Center View">
-                    <rect key="frame" x="300" y="300" width="0.0" height="1"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="300" y="299.5" width="0.0" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <accessibility key="accessibilityConfiguration" label="´"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="4CP-Zx-TKM"/>
@@ -134,29 +141,29 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAYS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7R-IH-Uj5">
                     <rect key="frame" x="181" y="267" width="57" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEm-mb-zGG">
                     <rect key="frame" x="241" y="267" width="57" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rj-65-koG">
                     <rect key="frame" x="302" y="267" width="57" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COz-X4-fMH">
                     <rect key="frame" x="362" y="267" width="57" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="nRN-1Y-oW1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0XN-wS-0of"/>
                 <constraint firstItem="tmx-bJ-nIZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3Gk-yN-Ram"/>

@@ -21,6 +21,14 @@
 		18ACC37E1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */; };
 		18D857801C7217EA00D69170 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A41BF71C7209EE009B9D0F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18D857811C7217EE00D69170 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A41BF81C7209EE009B9D0F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEE647392255F07600EA000D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEE6473B2255F07600EA000D /* Localizable.strings */; };
+		AEE6473D2255F5BC00EA000D /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */; };
+		AEE6473E2255F5BF00EA000D /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36D1C6A411A004AD2B6 /* CountdownViewModel.swift */; };
+		AEE6473F2255F5C300EA000D /* CountdownNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36C1C6A411A004AD2B6 /* CountdownNumberView.swift */; };
+		AEE647402255F5C300EA000D /* CountdownTimeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */; };
+		AEE647412255F5C300EA000D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36E1C6A411A004AD2B6 /* StringExtensions.swift */; };
+		AEE647422255F5C300EA000D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */; };
+		AEE647432255F5CE00EA000D /* CountdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1873D5A61C6B2C3A00E68AA4 /* CountdownView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +71,8 @@
 		18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimeLeft.swift; sourceTree = "<group>"; };
+		AEE6473A2255F07600EA000D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEE6473C2255F08600EA000D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				18ACC3641C6A3F9B004AD2B6 /* Info.plist */,
+				AEE6473B2255F07600EA000D /* Localizable.strings */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -227,10 +238,12 @@
 			};
 			buildConfigurationList = 1842E3201C6A3EAC00CD0EE2 /* Build configuration list for PBXProject "APECountdownView" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
+				Base,
 			);
 			mainGroup = 1842E31C1C6A3EAC00CD0EE2;
 			productRefGroup = 1842E3271C6A3EAC00CD0EE2 /* Products */;
@@ -249,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1873D5A71C6B2C3A00E68AA4 /* CountdownView.xib in Resources */,
+				AEE647392255F07600EA000D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE647432255F5CE00EA000D /* CountdownView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE647412255F5C300EA000D /* StringExtensions.swift in Sources */,
+				AEE647422255F5C300EA000D /* UIViewExtensions.swift in Sources */,
+				AEE6473D2255F5BC00EA000D /* CountdownView.swift in Sources */,
+				AEE647402255F5C300EA000D /* CountdownTimeLeft.swift in Sources */,
+				AEE6473F2255F5C300EA000D /* CountdownNumberView.swift in Sources */,
+				AEE6473E2255F5BF00EA000D /* CountdownViewModel.swift in Sources */,
 				18ACC36B1C6A402F004AD2B6 /* APECountdownViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,11 +333,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		AEE6473B2255F07600EA000D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEE6473A2255F07600EA000D /* en */,
+				AEE6473C2255F08600EA000D /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1842E3381C6A3EAC00CD0EE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -365,6 +399,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -375,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -416,6 +452,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -486,6 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -496,6 +534,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
