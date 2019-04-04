@@ -21,6 +21,7 @@
 		18ACC37E1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */; };
 		18D857801C7217EA00D69170 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A41BF71C7209EE009B9D0F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18D857811C7217EE00D69170 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A41BF81C7209EE009B9D0F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE9A450C225600D1007AAE1A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEE6473B2255F07600EA000D /* Localizable.strings */; };
 		AEE647392255F07600EA000D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEE6473B2255F07600EA000D /* Localizable.strings */; };
 		AEE6473D2255F5BC00EA000D /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */; };
 		AEE6473E2255F5BF00EA000D /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36D1C6A411A004AD2B6 /* CountdownViewModel.swift */; };
@@ -271,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEE647432255F5CE00EA000D /* CountdownView.xib in Resources */,
+				AE9A450C225600D1007AAE1A /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
