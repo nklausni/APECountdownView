@@ -21,8 +21,6 @@
 		18ACC37E1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */; };
 		18D857801C7217EA00D69170 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A41BF71C7209EE009B9D0F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18D857811C7217EE00D69170 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A41BF81C7209EE009B9D0F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AE9A450C225600D1007AAE1A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEE6473B2255F07600EA000D /* Localizable.strings */; };
-		AEE647392255F07600EA000D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEE6473B2255F07600EA000D /* Localizable.strings */; };
 		AEE6473D2255F5BC00EA000D /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */; };
 		AEE6473E2255F5BF00EA000D /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36D1C6A411A004AD2B6 /* CountdownViewModel.swift */; };
 		AEE6473F2255F5C300EA000D /* CountdownNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36C1C6A411A004AD2B6 /* CountdownNumberView.swift */; };
@@ -72,8 +70,6 @@
 		18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimeLeft.swift; sourceTree = "<group>"; };
-		AEE6473A2255F07600EA000D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AEE6473C2255F08600EA000D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				18ACC3641C6A3F9B004AD2B6 /* Info.plist */,
-				AEE6473B2255F07600EA000D /* Localizable.strings */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -243,7 +238,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				de,
 				Base,
 			);
 			mainGroup = 1842E31C1C6A3EAC00CD0EE2;
@@ -263,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1873D5A71C6B2C3A00E68AA4 /* CountdownView.xib in Resources */,
-				AEE647392255F07600EA000D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +265,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEE647432255F5CE00EA000D /* CountdownView.xib in Resources */,
-				AE9A450C225600D1007AAE1A /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,18 +326,6 @@
 			targetProxy = 1842E3321C6A3EAC00CD0EE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AEE6473B2255F07600EA000D /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEE6473A2255F07600EA000D /* en */,
-				AEE6473C2255F08600EA000D /* de */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1842E3381C6A3EAC00CD0EE2 /* Debug */ = {

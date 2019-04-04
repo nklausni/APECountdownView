@@ -256,7 +256,35 @@ A view with a countdown.
             layoutIfNeeded()
         }
     }
-    
+
+    @IBInspectable public var daysText: String = "DAYS" {
+        didSet {
+            countdownLabelDays.text = daysText
+            layoutIfNeeded()
+        }
+    }
+
+    @IBInspectable public var hoursText: String = "HOURS" {
+        didSet {
+            countdownLabelHours.text = hoursText
+            layoutIfNeeded()
+        }
+    }
+
+    @IBInspectable public var minutesText: String = "MIN" {
+        didSet {
+            countdownLabelMinutes.text = minutesText
+            layoutIfNeeded()
+        }
+    }
+
+    @IBInspectable public var secondsText: String = "SEC" {
+        didSet {
+            countdownLabelSeconds.text = secondsText
+            layoutIfNeeded()
+        }
+    }
+
     /**
      Font of each title.
     */
@@ -277,13 +305,11 @@ A view with a countdown.
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
-        labelSetup()
     }
 
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         xibSetup()
-        labelSetup()
     }
     
     /**
@@ -330,13 +356,6 @@ A view with a countdown.
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         
         return view
-    }
-
-    func labelSetup() {
-        countdownLabelDays.text = "Days".localized().uppercased()
-        countdownLabelHours.text = "Hours".localized().uppercased()
-        countdownLabelMinutes.text = "Minutes".localized().uppercased()
-        countdownLabelSeconds.text = "Seconds".localized().uppercased()
     }
     
     /**
