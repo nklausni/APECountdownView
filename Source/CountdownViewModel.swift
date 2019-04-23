@@ -28,7 +28,8 @@ import RxSwift
 The view model all logic for the framework.
 */
 class CountdownViewModel {
-    
+    var timer: DispatchSourceTimer?
+
     /**
      Observe countdown and call next when new data how mush time is left.
 
@@ -38,13 +39,13 @@ class CountdownViewModel {
     func observeCountdown(endDate: Date) -> Observable<CountdownTimeLeft> {
         return Observable.create { [weak self] observer in
             let queue = DispatchQueue.global(qos: .default)
-            let timer = DispatchSource.makeTimerSource(flags: [], queue: queue)
+            self?.timer = DispatchSource.makeTimerSource(flags: [], queue: queue)
 
-            timer.schedule(deadline: .now(), repeating: .milliseconds(100), leeway: .seconds(0))
+            self?.timer?.schedule(deadline: .now(), repeating: .milliseconds(100), leeway: .seconds(0))
             let cancel = Disposables.create {
-                timer.cancel()
+                self?.timer?.cancel()
             }
-            timer.setEventHandler {
+            self?.timer?.setEventHandler {
                 if cancel.isDisposed {
                     return
                 }
@@ -56,10 +57,14 @@ class CountdownViewModel {
                 }
             }
             
-            timer.resume()
+            self?.timer?.resume()
             
             return cancel
         }
+    }
+
+    func stopCountdown() {
+        timer?.cancel()
     }
     
     /**

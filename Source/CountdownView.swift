@@ -336,6 +336,10 @@ A view with a countdown.
                 }, onCompleted: onCompleted)
             .disposed(by: disposeBag)
     }
+
+    public func stopCountdown() {
+        countdownViewModel.stopCountdown()
+    }
     
     /**
      Setup xib.
